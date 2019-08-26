@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="col-xs-12">
+    <% @customers.each do |customer| %>
+    <div class="row insta-horta-profile">
+      <div class="insta-horta-name">
+        <div class="avatar-wrapper">
+          <%= image_tag (customer.logo.url ? customer.logo.url : "icon-round.png"), class: "insta-horta-avatar" %>
+        </div>
+        <p><%= customer.name %></p>
+      </div>
+      <div class="insta-share">
+        <%= link_to customer.fb_url do %>
+          <i class="fab fa-facebook-square insta-share-button"></i>
+        <% end %>
+        <%= link_to customer.insta_url do %>
+          <i class="fab fa-instagram insta-share-button"></i>
+        <% end %>
+        <%= link_to customer.site_url do %>
+          <i class="fas fa-link insta-share-button"></i>
+        <% end %>
+      </div>
+    </div>
+    <div class="row my-slick-carousel insta-image">
+      <% customer.photos.each do |photo| %>
+        <div>
+          <%= image_tag photo.upload.url, class: "insta-case-photos" %>
+        </div>
+      <% end %>
+    </div>
+
+    <p class="insta-text">
+      <%= customer.name %> <br>
+      <%= customer.insta_text %>
+    </p>
+    <% end %>
+  </div>
+
+</div>

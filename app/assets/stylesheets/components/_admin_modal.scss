@@ -1,0 +1,35 @@
+.admin-modal-box{
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 136px;
+  box-shadow: 4px 4px 4px #aaaaaa;
+  margin: 4px;
+  padding: 4px;
+  z-index: 4901;
+  background-color: white;
+  a{
+    color: $main-color;
+    text-align: right;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-width: 0.1px;
+    border-color: #aaaaaa;
+    font-weight: lighter;
+  }
+  a:hover{
+    color: $white;
+    background-color: $main-color;
+  }
+}
+
+.admin-modal-selection{
+  margin: 0;
+}
+
+.admin-modal-visible{
+  visibility: visible;
+}

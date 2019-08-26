@@ -1,0 +1,23 @@
+const killModal = document.querySelector(".contact-modal-kill");
+const openModal = document.querySelector(".footer-contactus");
+const boxModal = document.querySelector(".contact-modal-box");
+const modalBackground = document.querySelector(".contact-modal-background")
+
+openModal.addEventListener('click', (event) => {
+  boxModal.classList.toggle("contact-modal-end-position");
+  if(modalBackground.style.visibility == "visible"){
+    modalBackground.style.opacity = 0;
+    modalBackground.style.visibility = "hidden";
+  } else{
+    modalBackground.style.opacity = 0.8;
+    modalBackground.style.visibility = "visible";
+  }
+
+});
+
+killModal.addEventListener('click', (event) => {
+  boxModal.classList.toggle("contact-modal-end-position");
+  modalBackground.style.opacity = 0;
+  modalBackground.style.visibility = "hidden";
+});
+

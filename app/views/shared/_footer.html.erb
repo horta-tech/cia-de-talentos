@@ -1,0 +1,43 @@
+<%= render "./shared/contact_modal" %>
+<div id="footer">
+  <div class="footer-social">
+
+    <div class="footer-center-button">
+    <%= link_to root_path do %>
+      <div class="footer-center-text">
+        <i class="fas fa-home social-button text-center footer-icon"></i>
+      <% end %>
+      </div>
+    </div>
+
+    <div class="footer-center-button">
+    <%= link_to portfolio_path do %>
+      <div class="footer-center-text">
+        <i class="fas fa-seedling social-button footer-icon"></i>
+      <% end %>
+      </div>
+    </div>
+
+    <div class="footer-center-button">
+    <%= link_to chat_path do %>
+      <div class="footer-center-text">
+        <i class="fas fa-globe social-button footer-icon"></i>
+      <% end %>
+      </div>
+    </div>
+
+    <div class="footer-center-button">
+    <%= link_to location_path do %>
+      <div class="footer-center-text">
+        <i class="fas fa-map-marker-alt social-button footer-icon"></i>
+      <% end %>
+      </div>
+    </div>
+
+    <div class="footer-center-button footer-contactus">
+      <div class="footer-center-text">
+        <i class="fas fa-envelope social-button footer-icon"></i>
+      </div>
+    </div>
+  </div>
+</div>

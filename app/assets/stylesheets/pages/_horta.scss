@@ -1,0 +1,155 @@
+.staff-card {
+  padding: 32px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px 1px rgba(200, 200, 200, 0.3);
+}
+
+.staff-image {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.stats-box{
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats-wrapper {
+  margin: 20px;
+}
+
+.stats-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.stats-number {
+  span {
+    font-size: 20px;
+  }
+}
+.text-horta{
+  color: $main-color;
+}
+
+.big-letter{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.big-text{
+  font-size: 1.5rem;
+}
+
+.horta-intro{
+  padding: 0 20px;
+}
+
+.bg-horta{
+  background-color: $main-color;
+  color: white;
+}
+
+.horta-nav{
+  padding: 15px;
+}
+
+.plant-img{
+  width: 50vw;
+  margin: auto;
+  display: flex;
+}
+
+.green-div{
+  background-color: $main-color;
+  color: white;
+  padding: 10px 20px;
+}
+
+.hortas{
+  background-color: $main-color;
+  padding: 30px;
+}
+
+.horta-card{
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.green-dash{
+  width: 80px;
+  margin: auto;
+  border-bottom: 8px solid $main-color;
+  border-radius: 5px;
+}
+
+.horta-list{
+  li {
+    margin: 10px 0;
+  }
+}
+
+.horta-footer{
+  background-color: $main-color;
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.horta-marker{
+    font-size: 2.5rem;
+  }
+
+.social-media{
+  justify-content: space-around;
+  float: right;
+}
+
+.social-media-div{
+  i{
+  display: block;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 0 2px;
+  color: $main-color;
+  }
+}
+
+.team-img{
+  margin-top: 40%;
+}
+
+.crew-text{
+  font-size: 0.92rem;
+}
+
+.horta-border{
+  border: 1px solid $main-color;
+  padding: 3px;
+}
+
+.map-icon{
+  z-index: 40;
+  left: 10px;
+  img{
+    position: absolute;
+    top: 20px;
+    height: 50px;
+  }
+}
+
+#waze{
+  left: 55px;
+}

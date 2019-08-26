@@ -1,0 +1,75 @@
+.navbar {
+  height: 48px;
+  position: fixed;
+  width: 100vw;
+  padding: 0 8px;
+  margin: 0;
+  z-index: 4901;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px #bbbbbb;
+  a {
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+}
+
+.nav-wrapper {
+  height: 48px;
+  width: 100vw;
+}
+
+.nav-items {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile {
+  flex: 0 0 auto;
+  transition: all 0.3s ease;
+}
+
+.nav-item-left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.navbar-logo {
+  position: relative;
+  text-align: center;
+  height: 40px;
+  // width: 40px;
+}
+
+.navbar-logo-image{
+  height: 40px;
+  padding: 2px;
+}
+
+.navbar-horta-text{
+  margin-top: 8px;
+  font-family: "ROBOTO-thin";
+}
+
+.navbar-links {
+  font-size: 24px !important;
+  padding: 0 20px;
+}
+
+.nav-back {
+  color: $main-color;
+  font-size: 30px;
+}

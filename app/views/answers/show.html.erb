@@ -1,0 +1,10 @@
+<h3>Resposta - <%= @answer.id %> </h3>
+<%= link_to 'Deletar', answer_path(@answer), method: :delete %>
+<%= link_to 'Editar', edit_answer_path(@answer) %></h3>
+<p>Texto: <%= @answer.text %></p>
+<%= image_tag @answer.image.url if @answer.image.url %>
+<p>Próxima pergunta: <%= @answer.next_question.typed_texts.last if @answer.next_question %></p>
+<p>Caminho Final: <%= @answer.final_path %> </p>
+
+
+<%= link_to 'Voltar', answers_path, class: 'btn btn-primary' %>

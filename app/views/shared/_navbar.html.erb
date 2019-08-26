@@ -1,0 +1,25 @@
+<div class="nav-wrapper" id="nav-wrapper">
+  <div class="navbar" id="navbar">
+
+    <%= link_to :back do %>
+      <i class="fas fa-arrow-alt-circle-left nav-back"></i>
+    <% end %>
+
+    <!-- <h3 class="navbar-horta-text">CIA DE TALENTOS</h3> -->
+
+
+      <div class="navbar-logo">
+        <% if (current_user && current_user.admin) %>
+          <%= render "./shared/admin_modal" %>
+          <%= image_tag 'cia-logo.png', class: "navbar-logo-image" %>
+        <% else %>
+          <%= link_to chat_path do %>
+              <%= image_tag 'cia-logo.png', class: "navbar-logo-image" %>
+          <% end %>
+        <% end %>
+      </div>
+
+  </div>
+</div>
+
+

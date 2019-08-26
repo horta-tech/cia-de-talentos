@@ -1,0 +1,14 @@
+<% @questions.each do |question| %>
+  <%= link_to question_path(question) do %><h3>Questão - <%= question.id %> </h3><% end %>
+  <%= link_to 'Deletar', question_path(question), method: :delete %>
+  <%= link_to 'Editar', edit_question_path(question) %></h3>
+  <p><%= question.typed_texts.last %></p>
+
+  <h4>Respostas:</h4>
+  <% question.answers.each_with_index do |answer, index| %>
+    <h5>Resposta - <%= index + 1 %></h4>
+    <p><%= answer.text %></p>
+  <% end %>
+<% end %>
+
+<%= link_to 'Nova Questão', new_question_path, class: 'btn btn-info' %>

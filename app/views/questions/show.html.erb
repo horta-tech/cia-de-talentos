@@ -1,0 +1,20 @@
+<h3>Questão - <%= @question.id %> </h3>
+<%= link_to 'Deletar', question_path(@question), method: :delete %>
+<%= link_to 'Editar', edit_question_path(@question) %></h3>
+<p><%= @question.typed_texts.last %></p>
+
+<h4>Respostas:</h4>
+<% @question.answers.each_with_index do |answer, index| %>
+  <h5>Resposta - <%= index + 1 %></h4>
+  <%= link_to 'Desassociar resposta', question_answer_remove_answer_path(@question, answer), method: :delete %>
+  <p><%= answer.text %></p>
+<% end %>
+
+<h1>Adicionar respostas</h1>
+<%= simple_form_for [@question, @question_answer], url: question_associate_answer_path(@question) do |f| %>
+
+  <%= f.input :answer_id, collection: Answer.all, label_method: :text %>
+  <%= f.button :submit, 'Associar Resposta', class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Voltar', questions_path, class: 'btn btn-primary' %>

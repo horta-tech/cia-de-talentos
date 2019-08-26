@@ -1,0 +1,13 @@
+  <div class="meet-text row  mt-4">
+    <div class="col-6">
+      <h5 class="green-div">Vem conhecer a Horta!</h5>
+    </div>
+    <div class="col-6">
+      <p class="mr-2">Traga sua ideia, tome um café na Horta e leve seu pé de manjericão pra casa!</p>
+    </div>
+  </div>
+  <div id="map"></div>
+
+<% content_for :after_js do %>
+  <%= javascript_pack_tag "map" %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Edit Question</h1>
+<%= simple_form_for @question do |f| %>
+  <h3>Separar os diferentes items do array usando dois ponto e virgula.</h3>
+  <h4><small>Ex: Olá, meu nome é;;Olá, meu nome é Emily</small></h4>
+  <%= f.input :typed_texts, input_html: {value: @question.typed_texts.join(';;')} %>
+  <%= f.submit 'Editar Questao', class: 'btn btn-primary' %>
+<% end %>

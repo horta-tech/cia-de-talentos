@@ -1,0 +1,8 @@
+<%= simple_form_for @answer do |f| %>
+  <%= f.input :text %>
+  <%= f.input :image %>
+  <%= f.input :image_cache, as: :hidden %>
+  <%= f.input :next_question_id, collection: Question.all, label_method: :typed_texts %>
+  <%= f.input :final_path %>
+  <%= f.submit 'Adicionar Resposta', class: 'btn btn-primary' %>
+<% end %>

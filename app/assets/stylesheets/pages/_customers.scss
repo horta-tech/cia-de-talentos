@@ -1,0 +1,55 @@
+.customer-row-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  a:hover{
+    color: green;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+}
+
+.customer-photo-album{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-photo-card{
+  width: 100%;
+  padding: 16px 0;
+}
+
+.customer-photo{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.customer-form{
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+
+.customer-new-client-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+.customer-title{
+  margin: 16px 0;
+}
+
+.customer-bottom-border-line{
+  border-width: 2px;
+  border-bottom-style: solid;
+  border-color: green;
+}
+
+.customer-photo-form{
+  padding: 16px 0;
+}

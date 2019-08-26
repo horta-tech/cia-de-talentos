@@ -1,0 +1,13 @@
+<div class="admin-modal-box">
+  <%= link_to admin_path do %>
+    <p class="admin-modal-selection">painel de controle</p>
+  <% end %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <p class="admin-modal-selection">logout</p>
+  <% end %>
+</div>
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    <%= render(:partial => 'scripts/admin_modal', :handlers => [:erb], :formats => [:js]) %>
+  <% end %>
+<% end %>

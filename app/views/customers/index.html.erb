@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row customer-bottom-border-line">
+    <div class="customer-title">
+      <h3>Lista de cases</h3>
+    </div>
+  </div>
+  <% @customers.each do |customer| %>
+    <div class="row">
+      <div class="customer-row-info customer-bottom-border-line">
+        <%= link_to edit_customer_path(customer) do %>
+          <h3><%= customer.name %></h3>
+        <% end %>
+        <div>
+          <p>
+            <%= link_to customer,
+                      method: :delete,
+                      data: { confirm: "Tem certeza?"} do %>
+              <i class="fas fa-eraser"></i> apagar
+            <% end %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+  <div class="row">
+    <div class="customer-new-client-box">
+      <%= link_to new_customer_path do %>
+        <p class="btn btn-success">Novo case</p>
+      <% end %>
+    </div>
+  </div>

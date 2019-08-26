@@ -1,0 +1,8 @@
+const toggleAdminModal = document.querySelector(".navbar-logo");
+const boxAdminModal = document.querySelector(".admin-modal-box");
+
+toggleAdminModal.addEventListener('click', (event) => {
+  boxAdminModal.classList.toggle("admin-modal-visible");
+  toggleAdminModal.stopPropagation();
+});
+
